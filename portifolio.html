@@ -31,7 +31,7 @@
         <section id="sobre" class="section">
             <div class="container">
                 <div class="profile animate__animated animate__fadeIn">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Minha Foto" class="profile-img">
+                    <img src="marcelo.jpg" alt="Minha Foto" class="profile-img">
                     <div class="profile-info">
                         <h2>Olá, eu sou <span class="highlight">João Silva</span></h2>
                         <h3>Desenvolvedor Full Stack</h3>
@@ -64,7 +64,7 @@
                                 <i class="fab fa-java"></i> Java
                             </button>
                             <button class="skill-btn" data-skill="c">
-                                <i class="fas fa-code"></i> Linguagem C
+                                <i class="fas fa-code"></i> Linguagem C/C++
                             </button>
                         </div>
                     </div>
@@ -93,12 +93,6 @@
                             <button class="skill-btn" data-skill="node">
                                 <i class="fab fa-node-js"></i> Node.js
                             </button>
-                            <button class="skill-btn" data-skill="express">
-                                <i class="fas fa-server"></i> Express
-                            </button>
-                            <button class="skill-btn" data-skill="mongodb">
-                                <i class="fas fa-database"></i> MongoDB
-                            </button>
                             <button class="skill-btn" data-skill="mysql">
                                 <i class="fas fa-database"></i> MySQL
                             </button>
@@ -116,9 +110,6 @@
                             </button>
                             <button class="skill-btn" data-skill="vscode">
                                 <i class="fas fa-code"></i> VS Code
-                            </button>
-                            <button class="skill-btn" data-skill="figma">
-                                <i class="fab fa-figma"></i> Figma
                             </button>
                         </div>
                     </div>
@@ -318,7 +309,7 @@
                         </div>
                     </div>
                     
-                    <form id="contact-form" class="contact-form">
+                    <form id="contact-form" action="enviaremail.php" method="POST">
                         <div class="form-group">
                             <label for="name">Nome</label>
                             <input type="text" id="name" name="name" required>

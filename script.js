@@ -530,7 +530,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <div class="level-bar" style="width: 85%"></div>
                     </div>
                     <div class="skill-experience">
-                        <i class="fas fa-calendar-alt"></i> 3 anos de experiência
+                        <i class="fas fa-calendar-alt"></i> 2 anos de experiência
                     </div>
                 </div>
                 
@@ -538,9 +538,9 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="learning-path">
                         <h4><i class="fas fa-graduation-cap"></i> Como Aprendi:</h4>
                         <ul>
-                            <li><strong>Projetos Pessoais</strong> - Hospedagem de mais de 30 repositórios</li>
+                            <li><strong>Projetos Pessoais</strong> - Hospedagem de repositórios</li>
                             <li><strong>Contribuições Open Source</strong> - Participação em projetos colaborativos</li>
-                            <li><strong>GitHub Docs</strong> - Estudo de features avançadas</li>
+                            <li><strong>GitHub Docs</strong> - Hospedagem de host para sites HTML</li>
                         </ul>
                     </div>
                     
@@ -548,12 +548,16 @@ document.addEventListener('DOMContentLoaded', function() {
                         <h4><i class="fas fa-code-branch"></i> Projetos Relevantes:</h4>
                         <div class="project-item">
                             <h5>Portfólio</h5>
-                            <p>Este portfólio está versionado no GitHub com histórico de commits organizado.</p>
+                            <p>Este portfólio está versionado de forma privada no GitHub com histórico de commits organizado, se tiver interesse em ver o código desse portifolio, não hesite em entrar em contato comigo.</p>
                         </div>
                         
                         <div class="project-item">
                             <h5>Projetos Colaborativos</h5>
-                            <p>Participação em projetos open source com revisão de código e issues.</p>
+                            <p>Participação em projetos da faculdade com hospedagem no github de forma colaborativa, como um trabalho em C que fiz onde tivemos que fazer um sistema que gerencia uma PUB(public house).</p>
+                        </div>
+                        <div class="project-item">
+                            <h5>Hospedagem de um projeto</h5>
+                            <p>Hospedei um projeto em python que tenho, que simula um campeonato de futebol brasileiro desde o inicio do desenvolvimento no github, hoje esse repositorio conta com mais de 50 commits e 3 branches, sendo uma pra versão oficial, uma pra versão teste e outra para o site de download da aplicação.</p>
                         </div>
                     </div>
                     
