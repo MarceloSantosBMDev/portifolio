@@ -44,20 +44,29 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // 3. Formulário de Contato
-    const contactForm = document.getElementById('contact-form');
+const contactForm = document.getElementById('contact-form');
     if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
+        contactForm.addEventListener('submit', async function(e) {
             e.preventDefault();
-            const formData = new FormData(this);
-            const data = Object.fromEntries(formData);
             
-            // Simulação de envio
-            showNotification('Mensagem enviada com sucesso! Entrarei em contato em breve.', 'success');
-            this.reset();
+            showNotification('Enviando sua mensagem...', 'info');
+            
+            try {
+                const formData = new FormData(this);
+                await fetch('https://formsubmit.co/ajax/nagatofx7@gmail.com', {
+                    method: 'POST',
+                    body: formData,
+                    headers: { 'Accept': 'application/json' }
+                });
+                
+                showNotification('Mensagem enviada com sucesso!', 'success');
+                this.reset();
+                
+            } catch (error) {
+                showNotification('Erro ao enviar. Tente novamente.', 'error');
+            }
         });
     }
-
     function showNotification(message, type) {
         const notification = document.createElement('div');
         notification.className = `notification ${type}`;
@@ -566,6 +575,46 @@ document.addEventListener('DOMContentLoaded', function() {
                         <div class="certificate-badge">
                             <i class="fas fa-certificate"></i> GitHub Actions - GitHub (2023)
                         </div>
+                    </div>
+                </div>
+            `
+        },
+        vscode: {
+            title: "VScode",
+            icon: "fas fa-code",
+            content: `
+                <div class="skill-header">
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 85%"></div>
+                    </div>
+                    <div class="skill-experience">
+                        <i class="fas fa-calendar-alt"></i> 4 anos de experiência
+                    </div>
+                </div>
+                
+                <div class="skill-content">
+                    <div class="learning-path">
+                        <h4><i class="fas fa-graduation-cap"></i> Como Aprendi:</h4>
+                        <ul>
+                            <li><strong>Projetos Pessoais</strong> - Edição e criação de projetos</li>
+                            <li><strong>Desenvolvimento do TCC do técnico</strong> - TCC</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="projects">
+                        <h4><i class="fas fa-code-branch"></i> Projetos Relevantes:</h4>
+                        <div class="project-item">
+                            <h5>Portfólio</h5>
+                            <p>Este portfólio foi totalmente desenvolvido pelo VScode, tanto seus scripts, quanto seu HTML e seu CSS.</p>
+                        </div>
+                        
+                        <div class="project-item">
+                            <h5>TCC</h5>
+                            <p>O TCC do técnico foi desenvolvido pelo VScode, junto da maioria dos projetos do técnico que envvolviam desenvolvimento..</p>
+                        </div>
+                    </div>
+                    
+
                     </div>
                 </div>
             `
