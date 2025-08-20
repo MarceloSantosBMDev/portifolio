@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Marcelo<span class="highlight"> Dos Santos</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                    <li><a href="#projetos" class="nav-link">Projetos</a></li>
+                    <li><a href="#experiencia" class="nav-link">Experiência</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" aria-label="Alternar tema">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </header>
+
+        <section id="sobre" class="section">
+            <div class="container">
+                <div class="profile animate__animated animate__fadeIn">
+                    <img src="marcelo.jpg" alt="Minha Foto" class="profile-img">
+                    <div class="profile-info">
+                        <h2>Olá, eu sou <span class="highlight">Marcelo dos Santos</span></h2>
+                        <h3>Desenvolvedor Full Stack</h3>
+                        <p>Sou estudante de TI na Unicamp - Faculdade de Tecnologia e formado em Técnico em Desenvolvimento de sistemas pela ETEC. Programo desde os meus 12 anos, comecei com HTML, CSS e Javascript que inclusive são as linguagens que usei para criação desse portifólio.</p>
+                    <div class="profile-buttons">
+                            <a href="#contato" class="btn primary-btn">Contate-me</a>
+<a href="https://github.com/MarceloSantosBMDev/portifolio/raw/main/curriculo%20agosto.pdf" class="btn secondary-btn" download="Curriculo_Marcelo_Santos.pdf">Download CV</a>                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades" class="section">
+            <div class="container">
+                <h2 class="section-title">Minhas <span class="highlight">Habilidades</span></h2>
+                <p class="section-subtitle">Tecnologias que domino e estou aprendendo</p>
+                
+                <div class="skills-container">
+                    <div class="skills-column">
+                        <h3><i class="fas fa-code"></i> Linguagens</h3>
+                        <div class="skills-buttons">
+                            <button class="skill-btn" data-skill="python">
+                                <i class="fab fa-python"></i> Python
+                            </button>
+                            <button class="skill-btn" data-skill="javascript">
+                                <i class="fab fa-js"></i> JavaScript
+                            </button>
+                            <button class="skill-btn" data-skill="java">
+                                <i class="fab fa-java"></i> Java
+                            </button>
+                            <button class="skill-btn" data-skill="c">
+                                <i class="fas fa-code"></i> Linguagem C/C++
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-column">
+                        <h3><i class="fas fa-layer-group"></i> Front-end</h3>
+                        <div class="skills-buttons">
+                            <button class="skill-btn" data-skill="html">
+                                <i class="fab fa-html5"></i> HTML5
+                            </button>
+                            <button class="skill-btn" data-skill="css">
+                                <i class="fab fa-css3-alt"></i> CSS3
+                            </button>
+                            <button class="skill-btn" data-skill="bootstrap">
+                                <i class="fab fa-bootstrap"></i> Bootstrap
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-column">
+                        <h3><i class="fas fa-server"></i> Back-end</h3>
+                        <div class="skills-buttons">
+                            <button class="skill-btn" data-skill="node">
+                                <i class="fab fa-node-js"></i> Node.js
+                            </button>
+                            <button class="skill-btn" data-skill="mysql">
+                                <i class="fas fa-database"></i> MySQL
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-column">
+                        <h3><i class="fas fa-tools"></i> Ferramentas</h3>
+                        <div class="skills-buttons">
+                            <button class="skill-btn" data-skill="git">
+                                <i class="fab fa-git-alt"></i> Git
+                            </button>
+                            <button class="skill-btn" data-skill="github">
+                                <i class="fab fa-github"></i> GitHub
+                            </button>
+                            <button class="skill-btn" data-skill="vscode">
+                                <i class="fas fa-code"></i> VS Code
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-column">
+                        <h3><i class="fas fa-brain"></i> Soft Skills</h3>
+                        <div class="skills-buttons">
+                            <button class="skill-btn" data-skill="comunicacao">
+                                <i class="fas fa-comments"></i> Comunicação
+                            </button>
+                            <button class="skill-btn" data-skill="lideranca">
+                                <i class="fas fa-users"></i> Liderança
+                            </button>
+                            <button class="skill-btn" data-skill="resolucao">
+                                <i class="fas fa-lightbulb"></i> Resolução de Problemas
+                            </button>
+                            <button class="skill-btn" data-skill="agil">
+                                <i class="fas fa-tasks"></i> Metodologias Ágeis
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal de Habilidades -->
+        <div id="skill-modal" class="modal">
+            <div class="modal-content">
+                <button class="close-modal" aria-label="Fechar">&times;</button>
+                <h3 id="modal-title">
+                    <span id="modal-icon" class="skill-icon"></span>
+                    <span id="modal-title-text">Título da Habilidade</span>
+                </h3>
+                <div id="modal-body">
+                    <p>Carregando informações...</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn close-btn">Fechar</button>
+                </div>
+            </div>
+        </div>
+
+        <section id="projetos" class="section">
+            <div class="container">
+                <h2 class="section-title">Meus <span class="highlight">Projetos</span></h2>
+                <p class="section-subtitle">Alguns dos trabalhos que desenvolvi</p>
+                
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://img.freepik.com/free-photo/doing-sport-concept_23-2151937746.jpg?semt=ais_hybrid&w=740" alt="Projeto 1">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/MarceloSantosBMDev/Brasileiro---Simulador" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Sistema de Simulação</h3>
+                            <p>Sistema com interface gráfica e um site para download de simulação de um campeonato brasileiro de futebol, armazenando jogos em um banco de dados, também tem o metódo de apostas, onde o usúario que também faz um login armazenado em um banco de dados consegue apostar com suas fixas em jogos.</p>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">SQlite</span>
+                                <span class="tag">Tkinter</span>
+                                <span class="tag">Javascript</span>
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://nova-escola-producao.s3.amazonaws.com/gPTpj5g5aPDAhGk9MFaZqDFuhCBurrzupFcqwdS2bHBQEZxKPKjd5wBrGzpc/observacao-de-sala-de-aula-getty-images.jpg" alt="Projeto 2">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/MarceloSantosBMDev/Sistema-Escolar-Java" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Gerenciador de sala de aula</h3>
+                            <p>Nesse projeto, fiz um gerenciador de salas de aula pra uma escola, o usúario consegue cadastrar/excluir salas, adcionar/excluir alunos ou importar uma sala do excel junto de suas notas. O usuário consegue também gerar grafícos em um código em python. O projeto todo com a interface gráfica está na linguagem C exceto a parte de geração de gráficos, que está em python.</p>
+                            <div class="project-tags">
+                                <span class="tag">Java</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">panda</span>
+                                <span class="tag">matplotlib</span>
+                                <span class="tag">Interface Gráfica</span>
+                                <span class="tag">Lógica de programação</span>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://miro.medium.com/v2/resize:fit:1400/1*AQMGrnIHJnN_tX2fll6McQ.jpeg" alt="Projeto 3">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/MarceloSantosBMDev/analisedesentimentos/tree/main" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Análise de Sentimentos</h3>
+                            <p>Sistema de analise de sentimentos em C, onde o usúario coloca o número de parágrafos, o texto, as palavras positivas e negativas e o código retorna a quantidade de palavras positivas e negativas do texto junto de sua polaridade, a atividade usou batante lógica de programação e foi feita para um trabalho da disciplina Programação e Algoritimo I na faculdade.</p>
+                            <div class="project-tags">
+                                <span class="tag">C</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <a href="https://github.com/MarceloSantosBMDev" class="btn primary-btn">Ver Todos os Projetos</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="experiencia" class="section">
+            <div class="container">
+                <h2 class="section-title">Minha <span class="highlight">Jornada</span></h2>
+                <p class="section-subtitle">Experiências acadêmicas e profissionais</p>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">2025 - Atual</div>
+                        <div class="timeline-content">
+                            <h3>Unicamp - Faculdade de Tecnologia</h3>
+                            <p class="timeline-subtitle">Graduação em Analíse e Desenvolvimento de Sistemas e Sistema de Informação</p>
+                            <p>Atualmente cursando o 3º semestre de Análise e desenvolvimento de sistemas e também fazendo as máterias relacionadas a sistema de informação, para que eu consiga tirar duplo diploma.</p>
+                            <div class="timeline-tags">
+                                <span class="tag">Algoritmos</span>
+                                <span class="tag">Estrutura de Dados</span>
+                                <span class="tag">Banco de Dados</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">2021 - 2022</div>
+                        <div class="timeline-content">
+                            <h3>ETEC - Barueri/SP</h3>
+                            <p class="timeline-subtitle"> - Desenvolvimento de Sistemas</p>
+                            <p>Técnico em desenvolvimento de sistemas pela ETEC, aprendendo linguagens como C, Java, Node</p>
+                            <div class="timeline-tags">
+                                <span class="tag">Node</span>
+                                <span class="tag">Java</span>
+                                <span class="tag">C</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">2020 - 2022</div>
+                        <div class="timeline-content">
+                            <h3>Fieb Dagmar Ribas Trindade</h3>
+                            <p class="timeline-subtitle">Ensino Médio</p>
+                            <p>Formação no ensino médio pela escola Fieb Dagmar Ribas Trindade</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="section">
+            <div class="container">
+                <h2 class="section-title">Vamos <span class="highlight">Conversar</span></h2>
+                <p class="section-subtitle">Entre em contato para oportunidades ou colaborações</p>
+                
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>MarceloSantosBM06@hotmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Telefone</h4>
+                                <p>(11) 99340-4123</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Localização</h4>
+                                <p>Limeira, SP - Brasil</p>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/marcelo-dos-santos-da-boa-morte-5985a3262/" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/MarceloSantosBMDev" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://www.instagram.com/marcelo_grr/" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    
+ <form 
+ id="contact-form" 
+ action="https://formsubmit.co/marcelosantosbm06@hotmail.com"
+ method="POST"
+>
+ <!-- Configurações essenciais -->
+ <input type="hidden" name="_captcha" value="false">
+ <input type="hidden" name="_template" value="box">
+ <input type="hidden" name="_subject" value="Novo contato do portfólio">
+ 
+ <!-- Campos do formulário -->
+ <div class="form-group">
+   <label for="name">Nome</label>
+   <input type="text" id="name" name="name" required>
+ </div>
+ <div class="form-group">
+   <label for="email">Email</label>
+   <input type="email" id="email" name="email" required>
+ </div>
+ <div class="form-group">
+   <label for="subject">Assunto</label>
+   <input type="text" id="subject" name="subject" required>
+ </div>
+ <div class="form-group">
+   <label for="message">Mensagem</label>
+   <textarea id="message" name="message" rows="5" required></textarea>
+ </div>
+ 
+ <button type="submit" class="btn primary-btn btn-block">Enviar Mensagem</button>
+</form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3 class="logo">Marcelo dos <span class="highlight"> Santos</span></h3>
+                    <p>Desenvolvido por Marcelo dos Santos e com muito amor❤️</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#habilidades">Habilidades</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <p>MarceloSantosBM06@hotmail.com</p>
+                    <p>(11) 99340-4123</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Marcelo Santos. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
