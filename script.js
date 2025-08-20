@@ -53,7 +53,7 @@ const contactForm = document.getElementById('contact-form');
             
             try {
                 const formData = new FormData(this);
-                await fetch('https://formsubmit.co/ajax/nagatofx7@gmail.com', {
+                await fetch('https://formsubmit.co/ajax/marcelosantosbm06@hotmail.com', {
                     method: 'POST',
                     body: formData,
                     headers: { 'Accept': 'application/json' }
@@ -125,7 +125,7 @@ const contactForm = document.getElementById('contact-form');
                         <div class="level-bar" style="width: 85%"></div>
                     </div>
                     <div class="skill-experience">
-                        <i class="fas fa-calendar-alt"></i> 3 anos de experiência
+                        <i class="fas fa-calendar-alt"></i> 5 anos de experiência
                     </div>
                 </div>
                 
@@ -133,39 +133,35 @@ const contactForm = document.getElementById('contact-form');
                     <div class="learning-path">
                         <h4><i class="fas fa-graduation-cap"></i> Como Aprendi:</h4>
                         <ul>
-                            <li><strong>ETEC</strong> - Curso técnico com ênfase em Python para automação (2020-2022)</li>
-                            <li><strong>Unicamp</strong> - Disciplinas de algoritmos e estruturas de dados (2023-atual)</li>
-                            <li><strong>Alura</strong> - Cursos de Django e Flask (72 horas, 2022)</li>
-                            <li><strong>Udemy</strong> - Python para Data Science (40 horas, 2023)</li>
+                            <li><strong>Unicamp</strong> - Disciplinas de algoritmos e estruturas de dados</li>
+                            <li><strong>Livros</strong> - Livros de ensino de python</li>
+                            <li><strong>Coursera</strong> - Curso de python da University of Michigan</li>
                         </ul>
                     </div>
                     
                     <div class="projects">
                         <h4><i class="fas fa-code-branch"></i> Projetos Relevantes:</h4>
                         <div class="project-item">
-                            <h5>Sistema de Análise de Dados para TCC</h5>
-                            <p>Desenvolvi um sistema completo para processar dados de pesquisas escolares usando Pandas e Matplotlib, reduzindo o tempo de análise de 2 semanas para 2 dias.</p>
+                            <h5>Sistema de Análise de Dados de tarefas</h5>
+                            <p>Desenvolvi um back-end em java que ultilizava analíse dados em Python, esse programa em Java iniciava o código em python que gerava dados com os arquivos json fornecidos e imprimia esses gráficos na tela</p>
                         </div>
                         
                         <div class="project-item">
-                            <h5>Bot para Discord</h5>
-                            <p>Criei um bot com mais de 50 comandos para moderar servidores, incluindo sistemas de quizzes e ranking de membros, utilizando discord.py.</p>
+                            <h5>Simulador de campeonato de futebol</h5>
+                            <p>O simulador de campeonato de futebol foi inteiramente contruído em python, tanto seu backend quanto seu frontend, usando bibliotecas para administração de banco de dados e de interface gráfica</p>
                         </div>
                     </div>
                     
                     <div class="certificates">
                         <h4><i class="fas fa-award"></i> Certificados:</h4>
                         <div class="certificate-badge">
-                            <i class="fas fa-certificate"></i> Python para Data Science - Udemy (2023)
-                        </div>
-                        <div class="certificate-badge">
-                            <i class="fas fa-certificate"></i> Django Professional - Alura (2022)
+                            <i class="fas fa-certificate"></i> Python para Iniciantes - University of Michigan
                         </div>
                     </div>
                     
                     <div class="next-steps">
                         <h4><i class="fas fa-road"></i> Próximos Passos:</h4>
-                        <p>Estou me aprofundando em Flask para desenvolvimento de APIs RESTful e em Pandas para análise de dados mais avançada.</p>
+                        <p>Estou fortalecendo meu aprendizado nas bibliotecas de analise de dados como pandas</p>
                     </div>
                 </div>
             `
@@ -188,33 +184,24 @@ const contactForm = document.getElementById('contact-form');
                         <h4><i class="fas fa-graduation-cap"></i> Como Aprendi:</h4>
                         <ul>
                             <li><strong>ETEC</strong> - Fundamentos de programação web (2021)</li>
-                            <li><strong>Rocketseat</strong> - Bootcamp JavaScript (40 horas, 2022)</li>
-                            <li><strong>FreeCodeCamp</strong> - Certificação JavaScript Algorithms (300 horas, 2023)</li>
-                            <li><strong>Projetos Pessoais</strong> - Desenvolvimento de 10+ aplicações práticas</li>
+                            <li><strong>Projetos Pessoais</strong> - Desenvolvimento de jogos em um site HTML, CSS e JS</li>
                         </ul>
                     </div>
                     
                     <div class="projects">
                         <h4><i class="fas fa-code-branch"></i> Projetos Relevantes:</h4>
                         <div class="project-item">
-                            <h5>Gerenciador de Tarefas</h5>
-                            <p>Aplicação completa com Vue.js que sincroniza tarefas entre dispositivos usando Firebase, com autenticação e banco de dados em tempo real.</p>
+                            <h5>Jogos bases em JS</h5>
+                            <p>O site desenvolvido tem diversos jogos básicos como jogo da mémoria, jogo da velha, jogo da forca e jogo de NIM, junto de um sistema de campeonato de dois jogadores, onde os dois jogam um contra o outro até algum completar 5 pontos.</p>
                         </div>
                         
                         <div class="project-item">
-                            <h5>Jogo da Memória</h5>
-                            <p>Jogo educativo para crianças com sistema de pontuação e níveis progressivos, desenvolvido com JavaScript puro.</p>
+                            <h5>Site da Liga de StartUps</h5>
+                            <p>Foi usado no site da Liga de StartUps, diversas</p>
                         </div>
                     </div>
                     
-                    <div class="certificates">
-                        <h4><i class="fas fa-award"></i> Certificados:</h4>
-                        <div class="certificate-badge">
-                            <i class="fas fa-certificate"></i> JavaScript Algorithms - FreeCodeCamp (2023)
-                        </div>
-                        <div class="certificate-badge">
-                            <i class="fas fa-certificate"></i> Modern JavaScript - Rocketseat (2022)
-                        </div>
+
                     </div>
                     
                     <div class="next-steps">
@@ -224,13 +211,12 @@ const contactForm = document.getElementById('contact-form');
                 </div>
             `
         },
-        react: {
-            title: "React",
-            icon: "fab fa-react",
+        bootstrap: { title: "Bootstrap",
+            icon: "fab fa-bootstrap",
             content: `
                 <div class="skill-header">
                     <div class="skill-level">
-                        <div class="level-bar" style="width: 65%"></div>
+                        <div class="level-bar" style="width: 70%"></div>
                     </div>
                     <div class="skill-experience">
                         <i class="fas fa-calendar-alt"></i> 1 ano de experiência
@@ -241,39 +227,20 @@ const contactForm = document.getElementById('contact-form');
                     <div class="learning-path">
                         <h4><i class="fas fa-graduation-cap"></i> Como Aprendi:</h4>
                         <ul>
-                            <li><strong>Rocketseat</strong> - Bootcamp Ignite (120 horas, 2023)</li>
-                            <li><strong>Alura</strong> - React com TypeScript (40 horas, 2023)</li>
-                            <li><strong>Documentação Oficial</strong> - Estudo constante da documentação e projetos práticos</li>
+                            <li><strong>ETEC</strong> - Disciplina ensinada em Node na ETEC</li>
+                            <li><strong>TCC técnico</strong> - Uso do framework em meus projetos</li>
                         </ul>
                     </div>
                     
                     <div class="projects">
                         <h4><i class="fas fa-code-branch"></i> Projetos Relevantes:</h4>
                         <div class="project-item">
-                            <h5>Portfólio Interativo</h5>
-                            <p>Este portfólio que você está vendo foi construído com React, utilizando hooks e context API para gerenciamento de estado.</p>
+                            <h5>TCC do técnico</h5>
+                            <p>Durante a disciplina de programação web do técnico, foi ensinado a usar o framework bootstrap, esse mesmo aprendizado foi colocado em prática em meu TCC que se referia a uma loja virtual.</p>
                         </div>
                         
-                        <div class="project-item">
-                            <h5>App de Clima</h5>
-                            <p>Aplicativo que consome API de previsão do tempo, com busca por cidade e histórico de consultas, usando React hooks e axios.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="certificates">
-                        <h4><i class="fas fa-award"></i> Certificados:</h4>
-                        <div class="certificate-badge">
-                            <i class="fas fa-certificate"></i> React Fundamentals - Rocketseat (2023)
-                        </div>
-                    </div>
-                    
-                    <div class="next-steps">
-                        <h4><i class="fas fa-road"></i> Próximos Passos:</h4>
-                        <p>Dominar Next.js para SSR e aprofundar em testes com Jest/React Testing Library para garantir qualidade de código.</p>
-                    </div>
                 </div>
-            `
-        },
+            `},
         node: {
             title: "Node.js",
             icon: "fab fa-node-js",
@@ -283,7 +250,7 @@ const contactForm = document.getElementById('contact-form');
                         <div class="level-bar" style="width: 70%"></div>
                     </div>
                     <div class="skill-experience">
-                        <i class="fas fa-calendar-alt"></i> 1.5 anos de experiência
+                        <i class="fas fa-calendar-alt"></i> 1 ano de experiência
                     </div>
                 </div>
                 
@@ -291,32 +258,55 @@ const contactForm = document.getElementById('contact-form');
                     <div class="learning-path">
                         <h4><i class="fas fa-graduation-cap"></i> Como Aprendi:</h4>
                         <ul>
-                            <li><strong>Rocketseat</strong> - Bootcamp Node.js (80 horas, 2022)</li>
-                            <li><strong>Udemy</strong> - Node.js com Express e MongoDB (35 horas, 2023)</li>
-                            <li><strong>Projeto Profissional</strong> - Desenvolvimento de APIs na TechSolutions</li>
+                            <li><strong>ETEC</strong> - Disciplina ensinada em Node na ETEC</li>
+                            <li><strong>TCC técnico</strong> - Prótotipo do TCC feito em Node</li>
                         </ul>
                     </div>
                     
                     <div class="projects">
                         <h4><i class="fas fa-code-branch"></i> Projetos Relevantes:</h4>
                         <div class="project-item">
-                            <h5>API de Gerenciamento</h5>
-                            <p>API RESTful desenvolvida para sistema interno da TechSolutions, com autenticação JWT e integração com MongoDB.</p>
+                            <h5>Backend do site de vendas para o TCC da ETEC</h5>
+                            <p>O primeiro prótopipo do TCC foi feito em Node.js, ligando o backend com um banco de dados SQL, do terceiro protótipo pra cima, deixou de ser usado o node.</p>
                         </div>
                         
-                        <div class="project-item">
-                            <h5>Chat em Tempo Real</h5>
-                            <p>Aplicação de chat utilizando Socket.io para comunicação em tempo real entre clientes.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="next-steps">
-                        <h4><i class="fas fa-road"></i> Próximos Passos:</h4>
-                        <p>Aprofundar conhecimentos em arquitetura de microsserviços e implementação de GraphQL.</p>
-                    </div>
                 </div>
             `
         },
+
+        mysql: {
+            title: "MySQL",
+            icon: "fas fa-database",
+            content: `
+                <div class="skill-header">
+                    <div class="skill-level">
+                        <div class="level-bar" style="width: 70%"></div>
+                    </div>
+                    <div class="skill-experience">
+                        <i class="fas fa-calendar-alt"></i> 1 ano de experiência
+                    </div>
+                </div>
+                
+                <div class="skill-content">
+                    <div class="learning-path">
+                        <h4><i class="fas fa-graduation-cap"></i> Como Aprendi:</h4>
+                        <ul>
+                            <li><strong>Projetos</strong> - Projetos com banco de dados</li>
+                            <li><strong>TCC técnico</strong> - Prótotipo do TCC com banco de dados MySQL integrado</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="projects">
+                        <h4><i class="fas fa-code-branch"></i> Projetos Relevantes:</h4>
+                        <div class="project-item">
+                            <h5>Backend do site de vendas para o TCC da ETEC</h5>
+                            <p>O primeiro prótopipo do TCC foi feito em Node.js, ligando o backend com um banco de dados SQL, do terceiro protótipo pra cima, deixou de ser usado o node.</p>
+                        </div>
+                        
+                </div>
+            `
+        },
+
         html: {
             title: "HTML5",
             icon: "fab fa-html5",
@@ -326,7 +316,7 @@ const contactForm = document.getElementById('contact-form');
                         <div class="level-bar" style="width: 90%"></div>
                     </div>
                     <div class="skill-experience">
-                        <i class="fas fa-calendar-alt"></i> 4 anos de experiência
+                        <i class="fas fa-calendar-alt"></i> 2 anos de experiência
                     </div>
                 </div>
                 
@@ -334,31 +324,27 @@ const contactForm = document.getElementById('contact-form');
                     <div class="learning-path">
                         <h4><i class="fas fa-graduation-cap"></i> Como Aprendi:</h4>
                         <ul>
-                            <li><strong>ETEC</strong> - Curso técnico com ênfase em desenvolvimento web (2020-2022)</li>
-                            <li><strong>FreeCodeCamp</strong> - Certificação Responsive Web Design (300 horas, 2021)</li>
+                            <li><strong>ETEC</strong> - Curso técnico com disciplina em desenvolvimento WEB I e II</li>
                             <li><strong>Projetos Pessoais</strong> - Desenvolvimento de mais de 20 websites</li>
+                            <li><strong>TCC</strong> - TCC da ETEC usando HTML5</li>
+
                         </ul>
                     </div>
                     
                     <div class="projects">
                         <h4><i class="fas fa-code-branch"></i> Projetos Relevantes:</h4>
                         <div class="project-item">
-                            <h5>Landing Pages Responsivas</h5>
-                            <p>Desenvolvimento de diversas landing pages com HTML semântico e acessibilidade.</p>
+                            <h5>Simulador de campeonato de futebol</h5>
+                            <p>O simulador de campeonato de futebol em python tem um site para download criado em HTML5, o site é apenas para o download do código da aplicação Python.</p>
                         </div>
                         
                         <div class="project-item">
-                            <h5>Sistema de Componentes</h5>
-                            <p>Criação de biblioteca de componentes HTML/CSS reutilizáveis para projetos internos.</p>
+                            <h5>Este Portífolio</h5>
+                            <p>Este portífolio foi criado em HTML5, CSS3 e JavaScript sendo um projeto relevante, ele apresenta responsividade também.</p>
                         </div>
                     </div>
-                    
-                    <div class="certificates">
-                        <h4><i class="fas fa-award"></i> Certificados:</h4>
-                        <div class="certificate-badge">
-                            <i class="fas fa-certificate"></i> Responsive Web Design - FreeCodeCamp (2021)
-                        </div>
-                    </div>
+                 
+              
                 </div>
             `
         },
@@ -371,7 +357,7 @@ const contactForm = document.getElementById('contact-form');
                         <div class="level-bar" style="width: 85%"></div>
                     </div>
                     <div class="skill-experience">
-                        <i class="fas fa-calendar-alt"></i> 4 anos de experiência
+                        <i class="fas fa-calendar-alt"></i> 3 anos de experiência
                     </div>
                 </div>
                 
@@ -379,22 +365,21 @@ const contactForm = document.getElementById('contact-form');
                     <div class="learning-path">
                         <h4><i class="fas fa-graduation-cap"></i> Como Aprendi:</h4>
                         <ul>
-                            <li><strong>ETEC</strong> - Curso técnico com projetos práticos (2020-2022)</li>
-                            <li><strong>CSS Tricks</strong> - Estudo de artigos e tutoriais avançados</li>
-                            <li><strong>Alura</strong> - CSS Grid e Flexbox (20 horas, 2022)</li>
-                            <li><strong>Projetos Pessoais</strong> - Experimentação constante com novas técnicas</li>
+                            <li><strong>TCC</strong> - Uso de CSS3 no TCC do técnico</li>
+                            <li><strong>Portífolio</strong> - Este Portífolio foi desenvolvido com CSS3</li>
+                            <li><strong>Projetos Pessoais</strong> - Projetos pessoais usando CSS3</li>
                         </ul>
                     </div>
                     
                     <div class="projects">
                         <h4><i class="fas fa-code-branch"></i> Projetos Relevantes:</h4>
                         <div class="project-item">
-                            <h5>Animações CSS</h5>
-                            <p>Criação de diversas animações e transições para melhorar UX em projetos web.</p>
+                            <h5>Esse Portífolio</h5>
+                            <p>Esse Portífolio foi desenvolvido com sua parte visual em CSS3, como colorações do site.</p>
                         </div>
                         
                         <div class="project-item">
-                            <h5>Design System</h5>
+                            <h5>Site do projeto de simulação de campeonato de futebol em python</h5>
                             <p>Desenvolvimento de sistema de design com variáveis CSS e componentes estilizados.</p>
                         </div>
                     </div>
@@ -415,7 +400,7 @@ const contactForm = document.getElementById('contact-form');
                         <div class="level-bar" style="width: 75%"></div>
                     </div>
                     <div class="skill-experience">
-                        <i class="fas fa-calendar-alt"></i> 2 anos de experiência
+                        <i class="fas fa-calendar-alt"></i> 3 anos de experiência
                     </div>
                 </div>
                 
@@ -423,17 +408,17 @@ const contactForm = document.getElementById('contact-form');
                     <div class="learning-path">
                         <h4><i class="fas fa-graduation-cap"></i> Como Aprendi:</h4>
                         <ul>
-                            <li><strong>ETEC</strong> - Curso técnico com Java OO (2020-2022)</li>
-                            <li><strong>Unicamp</strong> - Disciplinas de programação orientada a objetos</li>
-                            <li><strong>Udemy</strong> - Java Completo (60 horas, 2022)</li>
+                            <li><strong>ETEC</strong> - Curso de Java</li>
+                            <li><strong>Unicamp</strong> - Disciplinas de programação orientada a objetos na ETEC</li>
+                            <li><strong>Udemy</strong> - Sistema de administração de salas de aula</li>
                         </ul>
                     </div>
                     
                     <div class="projects">
                         <h4><i class="fas fa-code-branch"></i> Projetos Relevantes:</h4>
                         <div class="project-item">
-                            <h5>Sistema Bancário</h5>
-                            <p>Aplicação console para simulação de operações bancárias, com classes para conta, cliente e transações.</p>
+                            <h5>Sistema de administração de salas de aula</h5>
+                            <p>Sistema de administração escolar que gera gráficos em python em relação aos alunos que fizeram e que não fizeram a prova, mostrando a porcentagem que foi e que não foi bem, o código além de usar Java em seu front-end e em algumas outras funções do back-end, usa a linguagem python para analise de dados e impressão de gráficos.</p>
                         </div>
                         
                         <div class="project-item">
@@ -466,22 +451,21 @@ const contactForm = document.getElementById('contact-form');
                     <div class="learning-path">
                         <h4><i class="fas fa-graduation-cap"></i> Como Aprendi:</h4>
                         <ul>
-                            <li><strong>ETEC</strong> - Fundamentos de programação (2020)</li>
-                            <li><strong>Unicamp</strong> - Disciplinas de estrutura de dados e algoritmos</li>
-                            <li><strong>LeetCode</strong> - Resolução de problemas com C</li>
+                            <li><strong>ETEC</strong> - Disciplina de programação usando C como linguagem</li>
+                            <li><strong>Unicamp</strong> - Disciplinas de programação I e II e programação orientada a objetos usando a linguagem C e C++</li>
+                            <li><strong>Projetos</strong> - Projetos feitos usando C e C++</li>
                         </ul>
                     </div>
                     
                     <div class="projects">
                         <h4><i class="fas fa-code-branch"></i> Projetos Relevantes:</h4>
                         <div class="project-item">
-                            <h5>Gerenciador de Memória</h5>
-                            <p>Implementação de alocador dinâmico de memória para disciplina de sistemas operacionais.</p>
+                            <h5>Analise de sentimentos</h5>
+                            <p>Na disciplina de programação e algoritimos foi usado a línguagem C, durante a disciplina toda foi usada a línguagem C, para todos os trabalhos, dando destaque para o trabalho "Analise de sentimentos" onde um código em C precisava analisar um digitado pelo usuário e identificar a polaridade do texto, quantas palavras negativas e positivas existiam. Caso interesse de revisão, fique a vontade a pegar o código em meu github.</p>
                         </div>
-                        
                         <div class="project-item">
-                            <h5>Jogo da Velha</h5>
-                            <p>Implementação em C com interface de console para disciplina de algoritmos.</p>
+                            <h5>Sistema de moedas virtuais (FT Coin - Discíplina de programação orientada a objetos I)</h5>
+                            <p>Na disciplina de Programação Orientada a Objetos I, foi dado um trabalho final onde precisavamos fazer um sistemas de moeda virtual vinculado a um banco de dados, "Maria DB", esse banco de dados armazenava o valor da moeda, onde o código analisava a data passada pelo usuário de compra e venda e também era possível visualizar o valor de ganho e perda do cliente em valor de R$ </p>
                         </div>
                     </div>
                 </div>
@@ -504,9 +488,9 @@ const contactForm = document.getElementById('contact-form');
                     <div class="learning-path">
                         <h4><i class="fas fa-graduation-cap"></i> Como Aprendi:</h4>
                         <ul>
-                            <li><strong>ETEC</strong> - Introdução ao controle de versão (2020)</li>
-                            <li><strong>Udemy</strong> - Git Completo (20 horas, 2021)</li>
-                            <li><strong>Experiência Profissional</strong> - Uso diário em projetos</li>
+                            <li><strong>ETEC</strong> - Uso em disciplinas na ETEC</li>
+                            <li><strong>Pesquisas</strong> - Pesquisas de como usar comandos espécificos no git</li>
+                            <li><strong>Experiência Acadêmica</strong> - Uso diário em projetos</li>
                         </ul>
                     </div>
                     
